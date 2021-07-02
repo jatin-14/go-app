@@ -1,0 +1,14 @@
+curl http://localhost:8000/movies
+
+curl http://localhost:8000/movie/22
+
+curl -X DELETE http://localhost:8000/movie/
+
+curl -d '{"name":"Focus", "year":2019, "rating": 7.0}' -H "Content-Type: application/json" -X POST http://localhost:8000/movie
+
+curl -d '{"name":"Interstellar", "year":2019, "rating": 8.2}' -H "Content-Type: application/json" -X POST http://localhost:8000/movie
+
+curl -d '{"name":"Inception", "year":2009, "rating": 8.5}' -H "Content-Type: application/json" -X POST http://localhost:8000/movie
+
+curl -d '{"name":"Inception", "year":2008, "rating": 8.0}' -H "Content-Type: application/json" -X PUT http://localhost:8000/movie/
+
